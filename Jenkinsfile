@@ -1,19 +1,18 @@
 pipeline {
     agent any 
     stages {
-        stage('Build') { 
+        stage('Build add_asset.py') { 
             steps {
-                // 
+                sh 'build add_asset.py'
             }
         }
-        stage('Test') { 
+        stage('Test add_asset.py') 
             steps {
-                // 
             }
         }
-        stage('Deploy') { 
+        stage('Deploy add_asset.py') { 
             steps {
-                // 
+                sh 'Test add_asset.py'
             }
         }
     }
