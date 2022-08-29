@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy add_asset.py') { 
             steps {
-                sh 'python Test add_asset.py'
+                sh 'python deploy add_asset.py'
             }
         }
     }
