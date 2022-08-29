@@ -8,6 +8,8 @@ pipeline {
         }
         stage('Test add_asset.py') 
             steps {
+                echo("hello world")
+                sh 'test add_asset'
             }
         }
         stage('Deploy add_asset.py') { 
