@@ -6,7 +6,7 @@ pipeline {
                 sh 'python build add_asset.py'
             }
         }
-        stage('Test add_asset.py') 
+        stage('Test add_asset.py'){ 
             steps {
                 echo("hello world")
                 sh 'python test add_asset'
