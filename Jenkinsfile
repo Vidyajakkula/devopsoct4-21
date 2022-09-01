@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build add_asset.py'){ 
             steps {
-                sh 'python build add_asset.py'
+                sh'python build add_asset.py'
             }
         }
         stage('Test add_asset.py'){ 
@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy add_asset.py'){ 
             steps {
-                sh 'python deploy add_asset.py'
+                sh'python deploy add_asset.py'
             }
             post{
                 success{
