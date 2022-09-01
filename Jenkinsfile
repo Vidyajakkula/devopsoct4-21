@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build add_asset.py'){ 
             steps {
-                sh'python3 build add_asset.py'
+                sh'python3 add_asset.py'
             }
         }
         stage('Test add_asset.py'){ 
