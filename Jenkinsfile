@@ -1,20 +1,20 @@
 pipeline {
     agent any 
     stages {
-        stage('Build add_asset.py'){ 
+        stage('Build pooled_server.py'){ 
             steps {
-                sh'python3 add_asset.py'
+                sh'python3 pooled_server.py'
             }
         }
-        stage('Test add_asset.py'){ 
+        stage('Test pooled_server.py'){ 
             steps {
                 echo("hello world")
-                sh'python3 test add_asset.py'
+                sh'python3 test pooled_server.py'
             }
         }
-        stage('Deploy add_asset.py'){ 
+        stage('Deploy pooled_server.py'){ 
             steps {
-                sh'python deploy add_asset.py'
+                sh'python deploy pooled_server.py'
             }
             post{
                 success{
