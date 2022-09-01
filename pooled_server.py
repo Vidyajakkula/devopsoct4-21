@@ -2,6 +2,7 @@ import sys
 import os
 from cross_origin  # The typical way to import flask-cors
 import requests  # importing the packages/modules
+from flask_cors import cors
 import psycopg2
 from connect2db import connectD
 app = Flask(_name_)
