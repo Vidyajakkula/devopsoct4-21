@@ -1,11 +1,10 @@
 import sys
 import os
-from flask_cors import CORS, cross_origin  # The typical way to import flask-cors
+from cross_origin  # The typical way to import flask-cors
 import requests  # importing the packages/modules
 import psycopg2
 from connect2db import connectD
 app = Flask(_name_)
-CORS(app)
 def convert_json(l_o_t, key):
     b = []
     # iterating  the list of tuples to get individual tuples.
