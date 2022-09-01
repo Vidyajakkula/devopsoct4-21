@@ -1,16 +1,18 @@
-from flask_cors import CORS, cross_origin
-import psycopg2
-# from addserverFORM import app
-from flask import Flask, request, jsonify, make_response
+import sys
+import os
+from flask_cors import CORS, cross_origin  # The typical way to import flask-cors
 import requests  # importing the packages/modules
 import psycopg2
 from connect2db import connectDB
+except ImportError:
+    # Path hack allows examples to be run without installation.
+    import os
+    parentdir = os.path.dirname(os.path.dirname(os.path.abspath(_file_)))
+    os.sys.path.insert(0, parentdir)
+    from flask_cors import CORS, cross_origin
 
-# import INSERT                                    #inserting the database file
-# import threading
-# from connect2DB import *
 
-app = Flask(__name__)
+app = Flask(_name_)
 CORS(app)
 def convert_json(l_o_t, key):
     b = []
