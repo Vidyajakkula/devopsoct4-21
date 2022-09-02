@@ -1,5 +1,6 @@
 import sys
 import os
+import flask_cors
 from cross_origin  # The typical way to import flask-cors
 import requests  # importing the packages/modules
 from flask_cors import CORS, cross_origin
